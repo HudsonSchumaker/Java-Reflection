@@ -1,7 +1,6 @@
 package br.com.schumaker.reflection.api.old;
 
 import br.com.schumaker.reflection.api.controle.ProdutoController;
-import br.com.schumaker.reflection.api.old.Request;
 import java.util.Map;
 
 /**

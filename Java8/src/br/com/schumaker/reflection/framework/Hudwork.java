@@ -38,6 +38,7 @@ public class Hudwork {
                 .invoca();
 
         System.out.println(retorno);
+        retorno = new ConversorXML().converte(retorno);
         return retorno;
     }
 }

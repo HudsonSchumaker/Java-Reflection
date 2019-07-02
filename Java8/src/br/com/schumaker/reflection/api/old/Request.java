@@ -1,6 +1,5 @@
 package br.com.schumaker.reflection.api.old;
 
-import br.com.schumaker.reflection.api.old.QueryParamsBuilder;
 import java.util.HashMap;
 import java.util.Map;
 
