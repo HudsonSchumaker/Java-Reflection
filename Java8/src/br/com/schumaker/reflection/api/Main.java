@@ -1,12 +1,14 @@
 package br.com.schumaker.reflection.api;
 
+import br.com.schumaker.reflection.api.dao.ProdutoDao;
+import br.com.schumaker.reflection.api.dao.ProdutoDaoMock;
 import br.com.schumaker.reflection.framework.Hudwork;
 import java.util.Scanner;
 
 public class Main {
 
     /**
-     * Simula o navegador.
+     * Simula o navegador
      *
      * @param args
      * @throws java.lang.Exception
@@ -22,6 +24,7 @@ public class Main {
             String url = s.nextLine();
 
             Hudwork hudwork = new Hudwork("br.com.schumaker.reflection.api.controle.");
+            hudwork.registra(ProdutoDao.class, ProdutoDaoMock.class);
             while (!url.equals("exit")) {
                 Object response = hudwork.executa(url);
                 System.out.println("Response: " + response);

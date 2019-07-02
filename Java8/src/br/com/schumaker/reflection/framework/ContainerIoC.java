@@ -4,11 +4,15 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Parameter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
 
 public class ContainerIoC {
+    
+    private final Map<Class<?>, Class<?>> mapaDeTipos = new HashMap<>();
 
     public Object getInstancia(Class<?> tipoFonte) {
         Stream<Constructor<?>> construtores
@@ -34,5 +38,9 @@ public class ContainerIoC {
         } catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public <T, K extends T> void registra(Class<T> tipoFonte, Class<K> tipoDestino) {
+        mapaDeTipos.put(tipoFonte, tipoDestino);
     }
 }

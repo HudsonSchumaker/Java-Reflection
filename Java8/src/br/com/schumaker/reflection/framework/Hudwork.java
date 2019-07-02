@@ -52,4 +52,8 @@ public class Hudwork {
         retorno = new ConversorXML().converte(retorno);
         return retorno;
     }
+
+    public <S, D extends S> void registra(Class<S> tipoFonte, Class<D> tipoDestino) {
+        container.registra(tipoFonte, tipoDestino);
+    }
 }
