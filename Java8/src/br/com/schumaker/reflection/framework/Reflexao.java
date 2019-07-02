@@ -7,9 +7,14 @@ package br.com.schumaker.reflection.framework;
 public class Reflexao {
 
     public ManipuladorClasse refleteClasse(String fqn) {
+        Class<?> classe = getClasse(fqn);
+        return new ManipuladorClasse(classe);
+    }
+
+    public Class<?> getClasse(String fqn) {
         try {
             Class<?> classe = Class.forName(fqn);
-            return new ManipuladorClasse(classe);
+            return classe;
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

@@ -4,8 +4,11 @@ package br.com.schumaker.reflection.playground;
  *
  * @author hudson schumaker
  */
+
+@NomeTagXML("ProductX")
 public class Produto extends SuperProduto {
 
+    @NomeTagXML("name")
     private String nome;
     private double valor;
     private String marca;

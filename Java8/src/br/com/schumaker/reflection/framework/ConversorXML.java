@@ -1,5 +1,6 @@
 package br.com.schumaker.reflection.framework;
 
+import br.com.schumaker.reflection.playground.NomeTagXML;
 import java.lang.reflect.Field;
 import java.util.Collection;
 
@@ -22,11 +23,23 @@ public class ConversorXML {
 
                 xmlBuilder.append("</lista>");
             } else {
-                String nomeClasse = classeObjeto.getName();
+                NomeTagXML anotacaoClasse = classeObjeto.getDeclaredAnnotation(NomeTagXML.class);
+                String nomeClasse
+                        = anotacaoClasse == null
+                                ? classeObjeto.getName()
+                                : anotacaoClasse.value();
+                
                 xmlBuilder.append("<" + nomeClasse + ">");
                 for (Field atributo : classeObjeto.getDeclaredFields()) {
                     atributo.setAccessible(true);
-                    String nomeAtributo = atributo.getName();
+
+                    NomeTagXML anotacaoAtributo = atributo.getDeclaredAnnotation(NomeTagXML.class);
+
+                    String nomeAtributo
+                            = anotacaoAtributo == null
+                                    ? atributo.getName()
+                                    : anotacaoAtributo.value();
+
                     Object valorAtributo = atributo.get(objeto);
                     xmlBuilder.append("<" + nomeAtributo + ">");
                     xmlBuilder.append(valorAtributo);

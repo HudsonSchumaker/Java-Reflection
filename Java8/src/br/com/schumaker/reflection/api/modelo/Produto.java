@@ -1,9 +1,17 @@
 package br.com.schumaker.reflection.api.modelo;
 
+import br.com.schumaker.reflection.playground.NomeTagXML;
+
+@NomeTagXML("Product")
 public class Produto {
 
+    @NomeTagXML("name")
     private String nome;
+    
+    @NomeTagXML("value")
     private double valor;
+    
+    @NomeTagXML("brand")
     private String marca;
 
     public Produto(String nome, double valor, String marca) {
