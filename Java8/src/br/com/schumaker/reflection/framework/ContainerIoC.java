@@ -10,6 +10,10 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+/**
+ * @author Hudson Schumaker
+ * @version 1.0.0
+ */
 public class ContainerIoC {
     
     private final Map<Class<?>, Class<?>> mapaDeTipos = new HashMap<>();
