@@ -5,6 +5,10 @@ import br.com.schumaker.reflection.api.modelo.Produto;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author Hudson Schumaker
+ * @version 1.0.0
+ */
 public class ProdutoController {
 
     private final ProdutoDaoMock produtoDao;
