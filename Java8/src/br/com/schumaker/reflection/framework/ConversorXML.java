@@ -4,6 +4,10 @@ import br.com.schumaker.reflection.playground.NomeTagXML;
 import java.lang.reflect.Field;
 import java.util.Collection;
 
+/**
+ * @author Hudson Schumaker
+ * @version 1.0.0
+ */
 public class ConversorXML {
 
     public String converte(Object objeto) {
