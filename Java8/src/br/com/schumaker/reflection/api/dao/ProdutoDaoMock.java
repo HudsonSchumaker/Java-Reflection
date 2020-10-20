@@ -4,6 +4,10 @@ import br.com.schumaker.reflection.api.modelo.Produto;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @author Hudson Schumaker
+ * @version 1.0.0
+ */
 public class ProdutoDaoMock implements ProdutoDao {
 
     private static final List<Produto> LISTA_PRODUTO
