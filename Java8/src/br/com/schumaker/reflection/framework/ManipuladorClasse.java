@@ -3,8 +3,8 @@ package br.com.schumaker.reflection.framework;
 import java.lang.reflect.Constructor;
 
 /**
- *
- * @author hudson schumaker
+ * @author Hudson Schumaker
+ * @version 1.0.0
  */
 public class ManipuladorClasse {
 
