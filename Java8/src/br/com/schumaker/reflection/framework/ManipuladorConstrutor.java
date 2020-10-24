@@ -4,8 +4,8 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- *
- * @author hudson schumaker
+ * @author Hudson Schumaker
+ * @version 1.0.0
  */
 public class ManipuladorConstrutor {
 
