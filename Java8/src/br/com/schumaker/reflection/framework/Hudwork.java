@@ -4,8 +4,8 @@ import br.com.schumaker.reflection.framework.protocolo.Request;
 import java.util.Map;
 
 /**
- *
- * @author hudson schumaker
+ * @author Hudson Schumaker
+ * @version 1.0.0
  */
 public class Hudwork {
 
