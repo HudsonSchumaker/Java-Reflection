@@ -9,8 +9,8 @@ import java.util.function.BiFunction;
 import java.util.stream.Stream;
 
 /**
- *
- * @author hudson schumaker
+ * @author Hudson Schumaker
+ * @version 1.0.0
  */
 public class ManipuladorMetodo {
 
