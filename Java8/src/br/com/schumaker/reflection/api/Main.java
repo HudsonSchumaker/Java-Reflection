@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
 
     /**
-     * Simula o navegador
+     * Simulates a web browser
      *
      * @param args
      * @throws java.lang.Exception
