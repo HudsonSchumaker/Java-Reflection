@@ -2,6 +2,9 @@ package br.com.schumaker.reflection.api.modelo;
 
 import br.com.schumaker.reflection.playground.NomeTagXML;
 
+/**
+ * @author Hudson Schumaker
+ */
 @NomeTagXML("Product")
 public class Produto {
 
