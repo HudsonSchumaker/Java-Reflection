@@ -5,6 +5,9 @@ import br.com.schumaker.reflection.api.dao.ProdutoDaoMock;
 import br.com.schumaker.reflection.framework.Hudwork;
 import java.util.Scanner;
 
+/**
+ * @author Hudson Schumaker
+ */
 public class Main {
 
     /**
