@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 
 /**
  * @author Hudson Schumaker
- * @version 1.0.0
  */
 public class ProdutoController {
 
