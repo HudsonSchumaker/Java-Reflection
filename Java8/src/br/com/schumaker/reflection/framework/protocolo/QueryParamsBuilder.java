@@ -5,7 +5,6 @@ import java.util.Map;
 
 /**
  * @author Hudson Schumaker
- * @version 1.0.0
  */
 public class QueryParamsBuilder {
 
