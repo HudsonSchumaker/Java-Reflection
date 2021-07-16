@@ -3,6 +3,9 @@ package br.com.schumaker.reflection.api.old;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author Hudson Schumaker
+ */
 public class QueryParamsBuilder {
 
     private final Map<String, Object> queryParams = new HashMap<>();
