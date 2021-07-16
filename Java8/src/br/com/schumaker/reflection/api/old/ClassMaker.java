@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 
 /**
  *
- * @author hudsons chumaker
+ * @author hudsons schumaker
  */
 public class ClassMaker {
 
